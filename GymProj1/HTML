@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kenia&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      color: white;
+      margin: 0px;
+      padding: 0px;
+      background: url("img/pulse-trace-glowing-computer-monitor-generated-by-ai.jpg");
+      background-size: cover;
+      font-family: "Kenia", sans-serif;
+    }
+    .logo {
+      position: absolute;
+      top: 18px;
+      left: 128px;
+      width: auto;
+      font-size: 32px;
+    }
+    .navbar {
+      float: right;
+      width: 42%;
+      position: relative;
+      top: 9px;
+      right: 190px;
+      margin: 8px auto;
+    }
+    .navbar li a:hover {
+      text-decoration: underline;
+      color: grey;
+    }
+    .navbar button {
+      float: right;
+    }
+    .nav1 {
+      display: inline-block;
+    }
+    .nav1 li {
+      display: inline-block;
+      font-size: 20px;
+    }
+    .nav1 li a {
+      color: white;
+      padding: 34px 23px;
+      text-decoration: none;
+    }
+    button {
+      margin: 16px 16px;
+      padding: 8px 39px;
+      background-color: #8364e2;
+      border: none;
+      border-radius: 17px;
+      font-family: "Kenia", sans-serif;
+      color: white;
+    }
+    button:hover {
+      cursor: pointer;
+      box-shadow: 0 0 10px 3px #8364e2;
+    }
+    .container {
+      display: inline-block;
+      height: 550px;
+      width: 99%;
+      margin: 30px 0px;
+    }
+    .left {
+      display: inline-block;
+      margin-left: 154px;
+      margin-top: 60px;
+      padding: 35px;
+    }
+    .left h1 {
+      font-size: 68px;
+      margin: 0px;
+    }
+    .left h2 {
+      color: #8364e2;
+      margin: 0px;
+    }
+    .left box1 {
+      float: left;
+    }
+    .left box2 {
+      float: right;
+    }
+    .left button {
+      padding: 8px 45px;
+      border-radius: 26px;
+      font-size: 17px;
+      margin-top: 45px;
+    }
+    .right {
+      float: right;
+      width: 40%;
+      margin-right: 109px;
+      margin-top: 70px;
+      height: 430px;
+      background: url(img/features2.jpg);
+      background-size: cover;
+      border-radius: 55px;
+    }
+  </style>
+
+  <body>
+    <header class="header">
+      <div class="logo">Crypto M5</div>
+      <div class="navbar">
+        <ul class="nav1">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+        <button class="btn">Get Started</button>
+      </div>
+    </header>
+    <div class="container">
+      <div class="left">
+        <h2>EXCHANGE PLATFORM</h2>
+        <h1>Create, hold or trade</h1>
+        <h1>Cryptocurrency</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti</p>
+        <button class="btn">Explore</button>
+        <button class="btn">Get Started</button>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+      <div class="right"></div>
+    </div>
+  </body>
+</html>
