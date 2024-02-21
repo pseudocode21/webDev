@@ -3,138 +3,155 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crypto</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kenia&display=swap"
-      rel="stylesheet"
-    />
+    <title>Fitness</title>
   </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kenia&display=swap"
+    rel="stylesheet"
+  />
   <style>
     body {
       color: white;
       margin: 0px;
       padding: 0px;
-      background: url("img/pulse-trace-glowing-computer-monitor-generated-by-ai.jpg");
+      background: url("img/pexels-scott-webb-28054.jpg");
       background-size: cover;
       font-family: "Kenia", sans-serif;
-    }
-    .logo {
-      position: absolute;
-      top: 18px;
-      left: 128px;
-      width: auto;
-      font-size: 32px;
-    }
-    .navbar {
-      float: right;
-      width: 42%;
-      position: relative;
-      top: 9px;
-      right: 190px;
-      margin: 8px auto;
-    }
-    .navbar li a:hover {
-      text-decoration: underline;
-      color: grey;
-    }
-    .navbar button {
-      float: right;
-    }
-    .nav1 {
-      display: inline-block;
-    }
-    .nav1 li {
-      display: inline-block;
-      font-size: 20px;
-    }
-    .nav1 li a {
-      color: white;
-      padding: 34px 23px;
-      text-decoration: none;
-    }
-    button {
-      margin: 16px 16px;
-      padding: 8px 39px;
-      background-color: #8364e2;
-      border: none;
-      border-radius: 17px;
-      font-family: "Kenia", sans-serif;
-      color: white;
-    }
-    button:hover {
-      cursor: pointer;
-      box-shadow: 0 0 10px 3px #8364e2;
-    }
-    .container {
-      display: inline-block;
-      height: 550px;
-      width: 99%;
-      margin: 30px 0px;
+      /* height: 10000px; */
     }
     .left {
       display: inline-block;
-      margin-left: 154px;
-      margin-top: 60px;
-      padding: 35px;
+      position: absolute;
+      top: 23px;
+      left: 41px;
+      text-align: center;
     }
-    .left h1 {
-      font-size: 68px;
-      margin: 0px;
-    }
-    .left h2 {
-      color: #8364e2;
-      margin: 0px;
-    }
-    .left box1 {
-      float: left;
-    }
-    .left box2 {
-      float: right;
-    }
-    .left button {
-      padding: 8px 45px;
-      border-radius: 26px;
-      font-size: 17px;
-      margin-top: 45px;
+    .mid {
+      display: block;
+      width: 43%;
+      margin: 20px auto;
     }
     .right {
-      float: right;
-      width: 40%;
-      margin-right: 109px;
-      margin-top: 70px;
-      height: 430px;
-      background: url(img/features2.jpg);
-      background-size: cover;
-      border-radius: 55px;
+      display: inline-block;
+      position: absolute;
+      top: 30px;
+      right: 10px;
+    }
+    .left img {
+      width: 72px;
+      filter: invert(100%);
+      animation: scaleAnim 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes scaleAnim {
+      from {
+        transform: scale(1); /* Initial scale */
+      }
+      to {
+        transform: scale(1.2); /* Scaled up */
+      }
+    }
+    .left div {
+      font-size: 20px;
+      margin-top: 10px;
+      /* line-height: 3px; */
+    }
+    .navbar {
+      display: inline-block;
+    }
+    .navbar li {
+      display: inline-block;
+      font-size: 20px;
+    }
+    .navbar li a {
+      text-decoration: none;
+      color: white;
+      padding: 34px 23px;
+    }
+    .navbar li a:hover,
+    .navbar li a.active {
+      text-decoration: underline;
+      color: grey;
+    }
+    .btn {
+      font-family: "Kenia", sans-serif;
+      margin: 0px 9px;
+      color: white;
+      background-color: transparent;
+      border: 2px solid rgb(50, 49, 49);
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: rgb(78, 77, 77);
+    }
+    .container {
+      border: 2px solid white;
+      margin: 106px 80px;
+      padding: 75px;
+      width: 33%;
+      border-radius: 28px;
+    }
+    .form-group input {
+      text-align: center;
+      display: block;
+      font-size: 17px;
+      width: 450px;
+      margin: 15px auto;
+      padding: 6px;
+      border-radius: 13px;
+      font-family: "Kenia", sans-serif;
+    }
+    .container h1 {
+      text-align: center;
+    }
+    .container button {
+      display: block;
+      width: 95%;
+      margin: 36px auto;
+      padding: 8px;
     }
   </style>
-
   <body>
     <header class="header">
-      <div class="logo">Crypto M5</div>
-      <div class="navbar">
-        <ul class="nav1">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Contacts</a></li>
+      <div class="left">
+        <!-- Left box for logo -->
+        <img src="img/dumbbell-35686.png" alt="error loading image" />
+        <div>Gaurav Fitness</div>
+      </div>
+      <div class="mid">
+        <!-- mid box for navbar -->
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
-        <button class="btn">Get Started</button>
+      </div>
+      <div class="right">
+        <!-- Right box for buttons -->
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
       </div>
     </header>
     <div class="container">
-      <div class="left">
-        <h2>EXCHANGE PLATFORM</h2>
-        <h1>Create, hold or trade</h1>
-        <h1>Cryptocurrency</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti</p>
-        <button class="btn">Explore</button>
-        <button class="btn">Get Started</button>
-        <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box3"></div>
-      </div>
-      <div class="right"></div>
+      <h1>Join the Best Gym of Punjab Now</h1>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Name" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Age" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Gender" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Locality" />
+          <button class="btn">Submit</button>
+        </div>
+      </form>
     </div>
   </body>
 </html>
